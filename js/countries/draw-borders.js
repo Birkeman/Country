@@ -1,6 +1,6 @@
 import $ from "jquery";
 import { getBordersNames } from "../services/api/get-border-names";
-function test1(country, borderName){
+function printBorders(country, borderName){
   $(".js-borders").append(
     '<button data-id= "' +
       country +
@@ -12,6 +12,6 @@ function test1(country, borderName){
 export function drawBorders(border) {
   for (let index = 0; index < border.length; index++) {
     const element = border[index];
-    getBordersNames(element,test1);
+    getBordersNames(element,printBorders);
   }
 }

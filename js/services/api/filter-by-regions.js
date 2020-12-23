@@ -1,15 +1,15 @@
-export function getRegion(region,callback) {
+import { route } from "./routes";
+export function getRegion(region, callback) {
   const axios = require("axios");
 
   axios
-    .get("https://restcountries.eu/rest/v2/"+region)
+    .get(route + region)
     .then(function (response) {
-        callback
+      callback;
       console.log(response);
     })
     .catch(function (error) {
       console.log(error);
     })
-    .then(function () {
-    });
+    .then(function () {});
 }
