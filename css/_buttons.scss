@@ -1,0 +1,32 @@
+.btn-go-back {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 28px;
+  border: none;
+  padding: 12px 54px;
+  background-color: var(--light-element);
+  color: var(--light-text);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  @media screen and (min-width: $desktop-breakpoint) {
+    font-size: 16px;
+    padding: 12px 42px;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 16px;
+  }
+}
+.go-back-div {
+  margin: 54px 6px;
+  white-space: break-spaces;
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding: 22px 0px 0px 74px;
+    white-space: inherit;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin: 28px 56px;
+    white-space: normal;
+  }
+}
+button {
+  cursor: pointer;
+}

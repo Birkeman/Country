@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 32px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+  color: var(--light-text);
+  background-color: var(--light-element);
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding: 7px 81px;
+  }
+  @media screen and (min-width: $desktop-s-breakpoint) {
+    padding: 7px 81px;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    display: block;
+    text-align: center;
+  }
+}
+.header-container {
+  padding: 42px 32px;
+}
+.change-mode {
+  font-weight: 600;
+  font-size: 24px;
+  @media screen and (min-width: $desktop-breakpoint) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop-s-breakpoint) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
+}

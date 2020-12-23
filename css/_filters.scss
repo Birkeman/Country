@@ -1,0 +1,103 @@
+.country-filters {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+  @media screen and (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 48px;
+  }
+  @media screen and (min-width: $desktop-s-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 48px;
+  }
+}
+.filter-search {
+  background-color: var(--light-element);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 18px 16px;
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding: 12px 32px;
+    width: 29vw;
+  }
+  @media screen and (min-width: $desktop-s-breakpoint) {
+    padding: 12px 32px;
+    width: 29vw;
+  }
+  span {
+    color: var(--light-input);
+    font-size: 28px;
+    padding: 16px 48px;
+    @media screen and (min-width: $desktop-breakpoint) {
+      padding: 3px 0px;
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop-s-breakpoint) {
+      padding: 3px 0px;
+      font-size: 14px;
+    }
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 14px;
+      padding: 0px;
+    }
+  }
+  input {
+    font-size: 24px;
+    border: none;
+    background-color: inherit;
+    width: 60%;
+    outline: none;
+    &::placeholder {
+      color: var(--light-input);
+      outline: none;
+      @media screen and (min-width: $desktop-s-breakpoint) {
+        font-size: 14px;
+      }
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+      width: auto;
+      font-size: 14px;
+      padding: 8px 21px;
+    }
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 14px;
+    }
+  }
+}
+.dropdown-filter {
+  background-color: var(--light-element);
+  color: var(--light-text);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 32px 16px;
+  width: 49vw;
+  @media screen and (min-width: $desktop-breakpoint) {
+    width: auto;
+    padding: 18px 39px;
+  }
+  @media screen and (min-width: $desktop-s-breakpoint) {
+    width: auto;
+    padding: 18px 39px;
+  }
+  select {
+    border: none;
+    font-size: 24px;
+    font-family: "Nunito Sans", sans-serif;
+    width: inherit;
+    font-weight: 600;
+    color: var(--light-text);
+    background-color: var(--light-element);
+
+    @media screen and (min-width: $desktop-breakpoint) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop-s-breakpoint) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 14px;
+    }
+  }
+}
